@@ -1,1 +1,16 @@
+body {
+ font-family: 'Open Sans', sans-serif; 
+}
 
+.home {
+  text-align: right;
+  font-size: 13px;
+}
+
+.nav a:hover {
+  
+}
+
+@keyframes hover {
+  from: {text-color: black} 
+}
