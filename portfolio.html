@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+    .something ul {
+      list-style-type: none;
+    }
+
+    .something li {
+      display: inline;
+    }
+
+    img {
+      position: absolute;
+      clip: rect(0px,0px,0px,0px);
+    }
+    </style>
+
     <title>Shreyas Lad | Portfolio</title>
     <meta charset="utf-8">
     <meta name="description" content="Shreyas Lad's online portfolio for freshman seminar">
@@ -11,19 +26,49 @@
     <link rel="icon" href="insert favicon here">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
    </head>
    <body>
-     <div class="navbar">
-       <p><span class="home"><a href="http://404meemr.me/portfolio">Portfolio</a></span><span class="right"><span class="one"><a href="../portfolio/whoami.html">Who Am I?</a></span> | <span class="two"><a href="#">What Do I Want?</a></span> | <span class="four"><a href="#">Four Year Plan</a></span> | <span class="five"><a href="#"><i class="fas fa-search"></i></a></span></span></p>
+     <div class="something">
+       <img src="header.jpg" style="width:100%; height:200;">
+       <ul>
+         <li><a href="portfolio.html" style="padding-left:10px; font-size:22px;">Portfolio</a></li>
+         <li><a href="#" style="float:right"><i class="fab fa-2x fa-github-square"></i></a></li>
+         <li><a href="#" style="float:right;">Four Year Plan</a></li>
+         <li><a href="#" style="float:right">What Do I Want?</a></li>
+         <li><a href="#" style="float:right">Who Am I?</a></li>
+       </ul>
      </div>
      <div class="hero">
-       <!-- something goes here lmao -->
+       <p>This is filler text</p>
      </div>
      <div class="content">
        <!-- things that help my grade go up go here -->
      </div>
-     <footer>
-       <p>Made with <i class="far fa-heart"></i> by <a href="404meemr.me">Shreyas Lad</a>
-     </footer>
+     <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Shreyas Lad's Portfolio</h5>
+                <p class="grey-text text-lighten-4">Hopefully this is enough design...</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text"><a class="grey-text text-lighten-3" href="portfolio.html">Portfolio</a></h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Who Am I?</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">What Do I Want?</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Four Year Plan</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 <a href="index.html" class="grey-text text-lighten-4">404meemr</a>
+            <a class="grey-text text-lighten-4 right" href="https://github.com/penetratingshot"><i class="fab fa-2x fa-github-square"></i></a>
+            </div>
+          </div>
+        </footer>
   </body>
 </html>
