@@ -1,74 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-    .something ul {
-      list-style-type: none;
-    }
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    .something li {
-      display: inline;
-    }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
 
-    img {
-      position: absolute;
-      clip: rect(0px,0px,0px,0px);
-    }
-    </style>
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-    <title>Shreyas Lad | Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Shreyas Lad's online portfolio for freshman seminar">
-    <meta name="keywords" content="shreyas lad, Shreyas Lad, shreyas lad portfolio, 404meemr portfolio">
-    <meta name="author" content="404meemr<Shreyas Lad>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/portfolio.css">
-    <link rel="icon" href="insert favicon here">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   </head>
-   <body>
-     <div class="something">
-       <img src="header.jpg" style="width:100%; height:200;">
-       <ul>
-         <li><a href="portfolio.html" style="padding-left:10px; font-size:22px;">Portfolio</a></li>
-         <li><a href="#" style="float:right"><i class="fab fa-2x fa-github-square"></i></a></li>
-         <li><a href="#" style="float:right;">Four Year Plan</a></li>
-         <li><a href="#" style="float:right">What Do I Want?</a></li>
-         <li><a href="#" style="float:right">Who Am I?</a></li>
-       </ul>
-     </div>
-     <div class="hero">
-       <p>This is filler text</p>
-     </div>
-     <div class="content">
-       <!-- things that help my grade go up go here -->
-     </div>
-     <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Shreyas Lad's Portfolio</h5>
-                <p class="grey-text text-lighten-4">Hopefully this is enough design...</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text"><a class="grey-text text-lighten-3" href="portfolio.html">Portfolio</a></h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Who Am I?</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">What Do I Want?</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Four Year Plan</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2019 <a href="index.html" class="grey-text text-lighten-4">404meemr</a>
-            <a class="grey-text text-lighten-4 right" href="https://github.com/penetratingshot"><i class="fab fa-2x fa-github-square"></i></a>
-            </div>
-          </div>
-        </footer>
-  </body>
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img {
+        position: absolute;
+        clip: rect(0px,100%,250px,0px);
+        z-index:-10;
+      }
+</style>
+</head>
+<body>
+  <img src="https://raw.githubusercontent.com/penetratingshot/penetratingshot.github.io/master/header.jpg" width="100%" height="450">
+<div class="navbar" style="position: static">
+
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+</body>
 </html>
