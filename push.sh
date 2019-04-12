@@ -13,7 +13,7 @@ if [[ -z "$source" ]]; then
     #user doesn't specify branch
     if [[ -z "$branch" ]]; then
         #pushing to default settings
-        echo "git push origin master"
+        git push origin master
     else
         echo "git push origin $branch"
     fi
