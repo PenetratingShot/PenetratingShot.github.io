@@ -13,9 +13,9 @@ if [[ -z "$source" ]]; then
     #user doesn't specify branch
     if [[ -z "$branch" ]]; then
         #pushing to default settings
-        git push origin master
+        echo "git push origin master"
     else
-        git push origin $branch
+        echo "git push origin $branch"
     fi
 #source
 else
@@ -23,9 +23,9 @@ else
    read branch2
    #user dosen't input branch but has inputted a remote
    if [[ -z "$branch2" ]]; then
-        git push $source master
+        echo "git push $source master"
    else
-        git push $source $branch2
+        echo "git push $source $branch2"
    fi
 fi
  
