@@ -29,15 +29,15 @@ if [[ -z "$source" ]]; then
     if [[ -z "$branch" ]]; then
         git push origin master
     else
-        printf "git push origin $branch"
+        git push origin $branch
     fi
 #source
 else
    printf "Branch: "
    read branch2
    if [[ -z "$branch2" ]]; then
-        printf "git push $source master"
+        git push $source master
    else
-        printf "git push $source $branch2"
+        git push $source $branch2
    fi
 fi 
