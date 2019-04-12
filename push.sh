@@ -19,7 +19,7 @@ if [[ -z "$message" ]]; then
     echo "Error: you must enter a commit message\n"
     add
 fi
-
+ 
 printf "Source: "
 read source
 
