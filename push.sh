@@ -1,7 +1,25 @@
+add() {
+    git add .
+    echo "Enter your commit message: "
+    read message
+    git commit -m "$message"
+    
+    if [[ -z "$message" ]]; then
+        echo "\e[31mError: you must enter a commit message\e[39m\n"
+        add
+    fi
+}
+
 git add .
 echo "Enter your commit message: "
 read message
 git commit -m "$message"
+
+if [[ -z "$message" ]]; then
+    echo "\e[31mError: you must enter a commit message\e[39m\n"
+    add
+fi
+
 echo "Source: "
 read source
 
