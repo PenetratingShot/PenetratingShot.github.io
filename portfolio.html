@@ -1,131 +1,142 @@
 <!DOCTYPE html>
 <html>
-	<head>
+
+  <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="index.js"></script>
-    </head>
-    
-    <body>
-<style>
-body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: #323335;
-}
-main {
-    flex: 1 0 auto;
-  }
-.navigation {
-  overflow: hidden;
-  background-color: #232426;
-}
-.navigation a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.dd {
-  float: left;
-  overflow: hidden;
-}
-.dd .ddbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-.navigation a:hover, .dd:hover .ddbtn {
-  color: #ff5e5e;
-}
-.dd-content {
-  display: none;
-  position: absolute;
-  background-color: #09090a;
-  opacity: 0.97;
-  border-radius: 6px;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.dd-content a {
-  float: none;
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-.dd-content a:hover {
-  /*background-color: #ddd;*/
-}
-.dd:hover .dd-content {
-  display: block;
-}
-</style>
-</head>
-<body>
+  </head>
 
-<div class="navigation" style="padding-top:8px;">
-  <a href="portfolio.html" style="font-size: 22px;">Shreyas Lad's Portfolio</a>
-  <a href="#" style="float:right; padding-top:10px; margin:0;"><i class="fab fa-2x fa-github-square"></i></a>
-  <a href="#" style="float:right; padding-top:10px; margin:0;">Four Year Plan</a>
-  <div class="dd" style="float:right;">
-    <button class="ddbtn">What Do I Want?
+  <body>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: #323335;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+
+      .navigation {
+        overflow: hidden;
+        background-color: #232426;
+      }
+
+      .navigation a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dd {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dd .ddbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navigation a:hover,
+      .dd:hover .ddbtn {
+        color: #ff5e5e;
+      }
+
+      .dd-content {
+        display: none;
+        position: absolute;
+        background-color: #09090a;
+        opacity: 0.97;
+        border-radius: 6px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dd-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dd-content a:hover {
+        /*background-color: #ddd;*/
+      }
+
+      .dd:hover .dd-content {
+        display: block;
+      }
+
+    </style>
+
+    <div class="navigation" style="padding-top:8px;">
+      <a href="portfolio.html" style="font-size: 22px;">Shreyas Lad's Portfolio</a>
+      <a href="#" style="float:right; padding-top:10px; margin:0;"><i class="fab fa-2x fa-github-square"></i></a>
+      <a href="#" style="float:right; padding-top:10px; margin:0;">Four Year Plan</a>
+      <div class="dd" style="float:right;">
+        <button class="ddbtn">What Do I Want?
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dd-content" style="float:right;">
-      <a href="#">Link 5</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-    
-  </div> 
-  <div class="dd" style="float:right;">
-    <button class="ddbtn">Who Am I?
+        <div class="dd-content" style="float:right;">
+          <a href="#">Link 5</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+
+      </div>
+      <div class="dd" style="float:right;">
+        <button class="ddbtn">Who Am I?
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dd-content" style="float:right;">
-      <a href="./portfolio/success.html">Sucess</a>
-      <a href="#">Vision Board</a>
-      <a href="#">Personal Profile</a>
-    </div>
-    
-  </div> 
-</div>
-<br>
-
-<h5 style="padding-left:15px; color: white;">Contact Me</h5>
-<p style="font-size:16px; padding-left:15px; color:white;">You can use the cards below or hover over the button in the bottom right corner. Unnecessary, but cool :)</p>
-
-<hr>
-<div class="row">
-    <div class="col s12 m6">
-      <div class="card" style="background-color: #424247;">
-        <div class="card-content white-text">
-          <span class="card-title" style="color:#ff5e5e;">GitHub</span>
-          <p>Penetratingshot  I have been opensourcing most of my programming projects since seventh grade, so there's so many repositories with unfinished code that I really don't care about.</p>
+        <div class="dd-content" style="float:right;">
+          <a href="./portfolio/success.html">Sucess</a>
+          <a href="#">Vision Board</a>
+          <a href="#">Personal Profile</a>
         </div>
-        <div class="card-action">
-          <a href="https://github.com/penetratingshot" style="color:#ff5e5e;">Click Me!</a>
-        </div>
+
       </div>
     </div>
-    <div class="col s12 m6">
+    <br>
+
+    <h5 style="padding-left:15px; color: white;">Contact Me</h5>
+    <p style="font-size:16px; padding-left:15px; color:white;">You can use the cards below or hover over the button in the bottom right corner. Unnecessary, but cool :)</p>
+
+    <hr>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card" style="background-color: #424247;">
+          <div class="card-content white-text">
+            <span class="card-title" style="color:#ff5e5e;">GitHub</span>
+            <p>Penetratingshot I have been opensourcing most of my programming projects since seventh grade, so there's so many repositories with unfinished code that I really don't care about.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://github.com/penetratingshot" style="color:#ff5e5e;">Click Me!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
         <div class="card" style="background-color: #424247;">
           <div class="card-content white-text">
             <span class="card-title" style="color:#ff5e5e;">Discord</span>
@@ -133,43 +144,44 @@ main {
             <br>
           </div>
           <div class="card-action">
-              <a href="https://discordapp.com" style="color:#ff5e5e;">Click Me!</a>
+            <a href="https://discordapp.com" style="color:#ff5e5e;">Click Me!</a>
           </div>
         </div>
       </div>
       <div class="col s12 m6">
-          <div class="card" style="background-color: #424247;">
-            <div class="card-content white-text">
-              <span class="card-title" style="color:#ff5e5e;">Twitter</span>
-              <p>@spud_thing Good luck finding actually good tweets :v</p>
-            </div>
-            <div class="card-action">
-              <a href="https://twitter.com/spud_this" style="color:#ff5e5e;">Click Me!</a>
-            </div>
+        <div class="card" style="background-color: #424247;">
+          <div class="card-content white-text">
+            <span class="card-title" style="color:#ff5e5e;">Twitter</span>
+            <p>@spud_thing Good luck finding actually good tweets :v</p>
+          </div>
+          <div class="card-action">
+            <a href="https://twitter.com/spud_this" style="color:#ff5e5e;">Click Me!</a>
           </div>
         </div>
-        <div class="col s12 m6">
-            <div class="card" style="background-color: #424247;">
-              <div class="card-content white-text">
-                <span class="card-title" style="color:#ff5e5e;">Reddit</span>
-                <p>/u/404meemr  21.4k karma</p>
-              </div>
-              <div class="card-action">
-                <a href="https://reddit.com/u/404meemr" style="color:#ff5e5e;">Click Me!</a>
-              </div>
-            </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card" style="background-color: #424247;">
+          <div class="card-content white-text">
+            <span class="card-title" style="color:#ff5e5e;">Reddit</span>
+            <p>/u/404meemr 21.4k karma</p>
           </div>
-  </div>
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large red">
+          <div class="card-action">
+            <a href="https://reddit.com/u/404meemr" style="color:#ff5e5e;">Click Me!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
     <i class="fas fa-address-book"></i>
   </a>
-  <ul>
-    <li><a class="btn-floating blue" href="https://reddit.com/u/404meemr" target="_blank"><i class="fab fa-reddit"></i></a></li>
-    <li><a class="btn-floating green" href="https://twitter.com/spud_thing" target="_blank"><i class="fab fa-twitter"></i></a></li>
-    <li><a class="btn-floating orange" href="https://discordapp.com" target="_blank"><i class="fab fa-discord"></i></a></li>
-    <li><a class="btn-floating yellow darken-1" href="https://github.com/penetratingshot" target="_blank"><i class="fab fa-github"></i></a></li>
-  </ul>
-</div>
-</body>
+      <ul>
+        <li><a class="btn-floating blue" href="https://reddit.com/u/404meemr" target="_blank"><i class="fab fa-reddit"></i></a></li>
+        <li><a class="btn-floating green" href="https://twitter.com/spud_thing" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="btn-floating orange" href="https://discordapp.com" target="_blank"><i class="fab fa-discord"></i></a></li>
+        <li><a class="btn-floating yellow darken-1" href="https://github.com/penetratingshot" target="_blank"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
+  </body>
+
 </html>
