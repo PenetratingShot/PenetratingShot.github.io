@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="../images//pfp.jpeg">
+    <title>Shreyas Lad | Vision Board</title>
+   </head>
+
+  <body>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: #323335;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+
+      .navigation {
+        overflow: hidden;
+        background-color: #232426;
+      }
+
+      .navigation a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .dd {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dd .ddbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navigation a:hover,
+      .dd:hover .ddbtn {
+        color: #ff5e5e;
+      }
+
+      .dd-content {
+        display: none;
+        position: absolute;
+        background-color: #09090a;
+        opacity: 0.97;
+        border-radius: 6px;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dd-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dd:hover .dd-content {
+        display: block;
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #232426;
+        color: white;
+        text-align: center;
+}
+
+    </style>
+
+    <div class="navigation" style="padding-top:8px;">
+      <a href="portfolio.html" style="font-size: 22px;">Shreyas Lad's Portfolio</a>
+      <a href="#" style="float:right; padding-top:10px; margin:0;"><i class="fab fa-2x fa-github-square"></i></a>
+      <a href="#" style="float:right; padding-top:10px; margin:0;">Four Year Plan</a>
+      <div class="dd" style="float:right;">
+        <button class="ddbtn">What Do I Want?
+      <i class="fa fa-caret-down"></i>
+    </button>
+        <div class="dd-content" style="float:right;">
+          <a href="./portfolio/whatsmoreimportant.html" style="color:#ff5e5e">What's More Important?</a>
+          <a href="./portfolio/finances.html">Finances</a>
+          <a href="./portfolio/adayinthelifeof.html">A Day in the Life Of</a>
+        </div>
+
+      </div>
+      <div class="dd" style="float:right;">
+        <button class="ddbtn">Who Am I?
+      <i class="fa fa-caret-down"></i>
+    </button>
+        <div class="dd-content" style="float:right;">
+          <a href="success.html">Sucess</a>
+          <a href="vision_board.html">Vision Board</a>
+          <a href="personal_profile.html">Personal Profile</a>
+        </div>
+
+      </div>
+    </div>
+    <br>
+    <br>
+    <h5 style="padding-left:15px; color: white;">What's More Important?</h5>
+    <h6 style="color: white; font-size: 20px; padding-top: 20px;"><center>Love or Money?</center></h6> <!-- No one will stop me from using this tag -->
+    <p style="color: white; margin-left: 2%; text-indent: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit ante vel ipsum vehicula dignissim. Quisque odio ligula, finibus eget diam ac, consequat faucibus mauris. Nulla luctus dui nibh. Vestibulum rutrum, urna in tempus convallis, felis erat consectetur nunc, congue luctus ligula enim nec turpis. Nulla viverra egestas metus non consectetur. Integer pretium molestie metus sit amet euismod. Etiam a venenatis quam, nec vestibulum metus. Vivamus mollis est in risus egestas maximus vitae eget arcu. Mauris vitae gravida felis, hendrerit posuere mi. Fusce cursus eleifend tellus vitae posuere. Donec id quam ornare, egestas leo at, bibendum turpis. Vestibulum dapibus ex sed quam scelerisque tristique. Donec nulla dui, efficitur at tempus in, finibus ut sem.</p>
+    <div class="footer">
+        <p>© 2019 404meemr</p>
+    </div>
+  </body>
+
+</html>
