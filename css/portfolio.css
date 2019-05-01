@@ -86,3 +86,12 @@ body {
         color: white;
         text-align: center;
       }
+      .footer a {
+          color: #ff5e5e;
+      }
+      .footer a:hover {
+          color: white;
+      }
+      .footer a:visited {
+          color: #ff5e5e;
+      }
